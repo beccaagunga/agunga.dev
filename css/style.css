@@ -157,6 +157,19 @@ h2 {
   margin-top: 2rem;
 }
 
+.contact-me {
+  color: rgb(204, 175, 72);
+}
+
+a:visited {
+  color: rgb(204, 175, 72);
+}
+
+.thanks {
+  font-size: .9rem;
+
+}
+
 .contact-icons {
   text-align: center;
   padding: 0;
