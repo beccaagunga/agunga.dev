@@ -1,3 +1,235 @@
-body {
-  background-image: url('img/goat.jpg');
+/* CUSTOM STYLES */
+
+html,
+body,
+header,
+.jumbotron,
+.contact {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+
+}
+
+.name-jumbo {
+  margin-left: 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.navbar {
+   background-color: #1d1d1d;
+}
+
+.about {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 130vh;
+}
+
+.me img {
+  width: 100px;
+  height: 200px;
+  padding: 0;
+  border-radius: 100%;
+  display: block;
+  margin: 2rem auto;
+  width: 50%;
+}
+
+.bio {
+  font-size: 1em;
+  margin: .5rem;
+  text-align: center;
+  font-family: monospace, serif;
+
+}
+
+.bio p:nth-last-of-type(1) {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.jumbotron h1 {
+  margin-top: 14rem;
+  margin-bottom: 2rem;
+}
+
+.jumbotron {
+  background: url(https://images.unsplash.com/photo-1473812371018-5f20f7e3c50e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+.projects {
+  background-image: url(https://images.unsplash.com/photo-1473812371018-5f20f7e3c50e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.projects h2 {
+  color: white;
+  padding-top: 2rem;
+
+}
+
+.skills {
+  margin-top: 2em;
+  padding: 0;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.skills-icons li {
+  list-style-type: none;
+  margin: 1em;
+
+}
+
+.skills-icons svg {
+  width: 40px;
+  height: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.card {
+  margin: 2rem auto;
+}
+
+.card-text {
+  text-align: center;
+  height: 3rem;
+}
+
+.card-detail {
+  font-size: .8em;
+  text-align: center;
+  font-family: monospace, serif;
+}
+
+.card-body {
+
+}
+
+.btn {
+  color: red;
+  padding: 10px;
+  width: 100%;
+  margin: 1rem 0;
+
+}
+
+
+.heading {
+  margin-top: 2rem;
+}
+
+.contact-icons {
+  text-align: center;
+  padding: 0;
+
+}
+
+.contact-icons li {
+  list-style-type: none;
+  margin: 2rem 0;
+
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES*/
+/*  TABLET  */
+ @media (min-width: 764px) {
+
+  .me img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+  .about {
+  height: 100vh;
+  }
+
+
+  .me img {
+    float: left;
+    border-radius: 0%;
+    margin-top: 8rem;
+    width: 200px;
+    height: 300px;
+
+  }
+
+  .bio {
+    float: right;
+    width: 75%;
+    margin-top: 5rem;
+    padding: 6rem;
+  }
+
+  .skills {
+    clear: both;
+  }
+
+
+  .contact {
+    height: 200vh;
+  }
+
 }
