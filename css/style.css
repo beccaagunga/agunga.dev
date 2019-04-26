@@ -151,9 +151,12 @@ h2 {
   margin-top: 2rem;
 }
 
-.contact-me,
-.email {
+.contact-me {
   color: rgb(204, 175, 72);
+}
+
+.email {
+    color: rgb(204, 175, 72);
 }
 
 .thanks {
@@ -168,15 +171,8 @@ h2 {
 
 .contact-icons li {
   list-style-type: none;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
-
-
-
-
-
-
-
 
 
 /* MEDIA QUERIES*/
