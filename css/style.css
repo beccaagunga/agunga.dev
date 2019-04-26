@@ -8,7 +8,6 @@ header,
   padding: 0;
   margin: 0;
   height: 100vh;
-
 }
 
 .name-jumbo {
@@ -95,7 +94,7 @@ h2 {
 }
 
 .skills {
-  margin-top: 2em;
+  margin-top: 1em;
   padding: 0;
 }
 
@@ -108,13 +107,13 @@ h2 {
 
 .skills-icons li {
   list-style-type: none;
-  margin: 1em;
 
 }
 
 .skills-icons svg {
   width: 40px;
   height: 40px;
+
 }
 
 .card-container {
@@ -127,6 +126,7 @@ h2 {
 
 .card {
   margin: 2rem auto;
+
 }
 
 .card-text {
@@ -138,18 +138,18 @@ h2 {
   font-size: .8em;
   text-align: center;
   font-family: monospace, serif;
-}
-
-.card-body {
 
 }
+
+.card-detail a {
+  color: white;
+}
+
 
 .btn {
-  color: red;
   padding: 10px;
   width: 100%;
   margin: 1rem 0;
-
 }
 
 
@@ -157,13 +157,10 @@ h2 {
   margin-top: 2rem;
 }
 
-.contact-me {
+.contact-me a {
   color: rgb(204, 175, 72);
 }
-
-a:visited {
-  color: rgb(204, 175, 72);
-}
+ß
 
 .thanks {
   font-size: .9rem;
@@ -192,13 +189,11 @@ a:visited {
 
 
 
-
-
-
-
 /* MEDIA QUERIES*/
 /*  TABLET  */
  @media (min-width: 764px) {
+
+
 
   .me img {
     width: 250px;
@@ -233,7 +228,7 @@ a:visited {
     float: right;
     width: 75%;
     margin-top: 5rem;
-    padding: 6rem;
+    padding: 4rem;
   }
 
   .skills {
