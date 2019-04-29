@@ -49,6 +49,7 @@ h2 {
   margin: .5rem;
   text-align: center;
   font-family: monospace, serif;
+  margin-bottom: 2rem;
 }
 
 .bio p:nth-last-of-type(1) {
@@ -174,12 +175,16 @@ h2 {
   margin: 3rem 0;
 }
 
+.copy {
+  text-align: center;
+  font-size: .5em;
+  position: sticky;
+}
+
 
 /* MEDIA QUERIES*/
 /*  TABLET  */
  @media (min-width: 764px) {
-
-
 
   .me img {
     width: 250px;
@@ -223,7 +228,7 @@ h2 {
 
 
   .contact {
-    height: 200vh;
+    height: 100vh;
   }
 
 }
