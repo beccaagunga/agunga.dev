@@ -111,7 +111,7 @@ h2 {
 
 .skills-icons li {
   list-style-type: none;
-  line-height: 2;
+  /* line-height: 2; */
 
 }
 
@@ -207,7 +207,7 @@ a:visited {
 
   .skills-icons {
     justify-content: space-between;
-    margin: 1rem;
+    /* margin: 1rem; */
   }
 
   .card-container {
