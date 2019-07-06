@@ -10,6 +10,10 @@ header,
   height: 100vh;
 }
 
+.skill {
+  height: 30vh;
+}
+
 .name-jumbo {
   margin-left: 1.5rem;
 }
@@ -31,7 +35,7 @@ h2 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 130vh;
+  height: 112vh;
 }
 
 .me img {
@@ -100,13 +104,14 @@ h2 {
 
 .skills-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   padding: 0;
 }
 
 .skills-icons li {
   list-style-type: none;
+  line-height: 2;
 
 }
 
@@ -178,8 +183,13 @@ h2 {
 .copy {
   text-align: center;
   font-size: .5em;
-  position: sticky;
+  margin: 3rem 0 0 0;
 }
+
+a:visited {
+  color: black;
+}
+
 
 
 /* MEDIA QUERIES*/
@@ -189,6 +199,15 @@ h2 {
   .me img {
     width: 250px;
     height: 250px;
+  }
+
+  .about {
+    height: 110vh;
+  }
+
+  .skills-icons {
+    justify-content: space-between;
+    margin: 1rem;
   }
 
   .card-container {
@@ -212,7 +231,6 @@ h2 {
     margin-top: 8rem;
     width: 200px;
     height: 300px;
-
   }
 
   .bio {
@@ -226,9 +244,9 @@ h2 {
     clear: both;
   }
 
-
   .contact {
     height: 100vh;
   }
+
 
 }
