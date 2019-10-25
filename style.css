@@ -92,6 +92,10 @@ nav ul li {
   font-weight: 700;
 }
 
+nav a {
+  color: var(--light-color);
+}
+
 nav a:hover {
   color: var(--bolt);
   text-decoration: none;
