@@ -1,4 +1,4 @@
-// Animation on Scroll Init
-AOS.init({
-  duration: 3000
-});
+// // Animation on Scroll Init
+// AOS.init({
+//   duration: 3000
+// });
