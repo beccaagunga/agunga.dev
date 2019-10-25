@@ -16,8 +16,8 @@ header,
   padding: 0;
   margin: 0;
   height: 100vh;
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 
 .container {
@@ -29,13 +29,13 @@ header,
 
 /* TEXT STYLING */
 a {
-  color: var(--light-color);
+  color: var(--dark-color);
   font-family: 'Helvetica', sans-serif;
   text-decoration: none;
 }
 
 a:visited {
-color: var(--light-color);
+color: var(--dark-color);
 }
 
 /* HERO */
@@ -63,7 +63,7 @@ color: var(--light-color);
 
 /* NAVBAR */
 nav {
-  background-color: var(--dark-color);
+  background-color: var(--light-color);
 }
 
 nav ul {
@@ -74,7 +74,6 @@ nav ul {
   margin: auto;
   height: 50px;
   width: calc(1/3*100% - (1 - 1/3)*10px);
-  /* background-color: blue; */
 }
 
 nav .logo {
@@ -93,7 +92,7 @@ nav ul li {
 }
 
 nav a {
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 
 nav a:hover {
@@ -106,7 +105,7 @@ nav a:hover:nth-child(2) {
 }
 
 nav a:visited {
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 
 
@@ -114,21 +113,21 @@ nav a:visited {
 /* PROJECTS */
 
 .projects {
-  height: 230vh;
+  height: 320vh;
 }
 
 .projects h2 {
   /* text-align: center; */
   text-transform: uppercase;
   margin-left: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   font-size: 3rem;
   color: var(--bolt);
   font-weight: 700;
 }
 
 .projects a {
-  color: var(--light-color);
+  color: var(--dark-color);
   padding: 1rem;
   font-size: 1.5rem;
 }
@@ -159,12 +158,13 @@ nav a:visited {
 }
 
 .project-item a:visited {
-  color: var(--light-color);
+  color: var(--dark-color);
   cursor: pointer;
 }
 
 .snippet {
-  color: var(--alt-color)
+  color: var(--dark-color);
+  margin: -.5rem;
 }
 
 .project-item h3 {
@@ -173,9 +173,11 @@ font-size: .8em;
 }
 
 .code {
-  font-size: .5rem;
+  font-size: 1rem;
   color: var(--bolt);
   padding: .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .project-img img {
@@ -271,6 +273,7 @@ font-size: .8em;
 .socials ul li {
     display: inline;
     margin: 1rem;
+    font-weight: 700;
 }
 
 .socials a:hover {
@@ -322,7 +325,7 @@ font-size: .8em;
    }
 
    .projects {
-     height: 510vh;
+     height: 560vh;
    }
 
    .project-img img {
@@ -358,7 +361,6 @@ font-size: .8em;
 
    .hero-name {
     font-size: 8em;
-    color: red;
   }
 
 
@@ -371,11 +373,11 @@ font-size: .8em;
   }
 
   .projects {
-    height: 250vh;
+    height: 290vh;
   }
 
   .about {
-    height: 120vh;
+    height: 140vh;
   }
 
 
