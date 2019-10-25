@@ -1,259 +1,356 @@
 /*  CUSTOM STYLES  */
 
+:root {
+  --dark-color: #141414;
+  --light-color: #fff;
+  --alt-color: rgb(159, 159, 159);
+  --bolt: #ECBA17;
+}
 html,
 body,
 header,
-.jumbotron,
+.hero,
+.projects,
+.about,
 .contact {
   padding: 0;
   margin: 0;
   height: 100vh;
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
 
-.skill {
-  height: 30vh;
-}
-
-.name-jumbo {
-  margin-left: 1.5rem;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.navbar {
-   background-color: #1d1d1d;
-}
-
-.about {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 112vh;
-}
-
-.me img {
-  width: 100px;
-  height: 200px;
-  padding: 0;
-  border-radius: 100%;
-  display: block;
-  margin: 2rem auto;
-  width: 50%;
-}
-
-.bio {
-  font-size: 1em;
-  margin: .5rem;
-  text-align: center;
-  font-family: monospace, serif;
-  margin-bottom: 2rem;
-}
-
-.skills-text {
-  font-size: 1em;
-  margin: .5rem;
-  text-align: center;
-  font-family: monospace, serif;
-  margin-bottom: 2rem;
-}
-
-.bio p:nth-last-of-type(1) {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.jumbotron h1 {
-  margin-top: 14rem;
-  margin-bottom: 2rem;
-}
-
-.jumbotron {
-  background: url(https://images.unsplash.com/photo-1473812371018-5f20f7e3c50e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
-}
-
-.projects {
-  background-image: url(https://images.unsplash.com/photo-1473812371018-5f20f7e3c50e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-.projects h2 {
-  color: white;
-  padding-top: 2rem;
-
-}
-
-.skills {
-  margin-top: 1em;
-  padding: 0;
-}
-
-.skills-icons {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-.skills-icons li {
-  list-style-type: none;
-
-
-}
-
-.skills-icons svg {
-  width: 40px;
-  height: 40px;
-
-}
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-}
-
-.card {
-  margin: 2rem auto;
-
-}
-
-.card-text {
-  text-align: center;
-  height: 3rem;
-}
-
-.card-detail {
-  font-size: .8em;
-  text-align: center;
-  font-family: monospace, serif;
-
-}
-
-.btn {
-  padding: 10px;
+.container {
   width: 100%;
-  margin: 1rem 0;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
-
-.heading {
-  margin-top: 2rem;
-}
-
-.contact-me {
-  color: rgb(204, 175, 72);
-}
-
-.email {
-    color: rgb(204, 175, 72);
-}
-
-.thanks {
-  font-size: .9rem;
-}
-
-.contact-icons {
-  text-align: center;
-  padding: 0;
-
-}
-
-.contact-icons li {
-  list-style-type: none;
-  margin: 3rem 0;
-}
-
-.copy {
-  text-align: center;
-  font-size: .5em;
-  margin: 3rem 0 0 0;
+/* TEXT STYLING */
+a {
+  color: var(--light-color);
+  font-family: 'Helvetica', sans-serif;
+  text-decoration: none;
 }
 
 a:visited {
-  color: black;
+color: var(--light-color);
 }
+
+/* HERO */
+
+.hero-name {
+  margin-left: 1.5rem;
+  font-size: 11em;
+  font-family: 'Staatliches', sans-serif;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro p {
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+
+.intro h3 {
+  margin: 2rem;
+}
+
+
+/* NAVBAR */
+nav {
+  background-color: var(--dark-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  height: 50px;
+  width: calc(1/3*100% - (1 - 1/3)*10px);
+  /* background-color: blue; */
+}
+
+nav .logo {
+  width: 40px;
+  height: 40px;
+  margin: .6rem 0;
+  left: 0;
+  margin: .6rem 1rem;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  margin: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: var(--bolt);
+  text-decoration: none;
+}
+
+/* PROJECTS */
+
+.projects {
+  height: 175vh;
+}
+
+.projects h2 {
+  /* text-align: center; */
+  text-transform: uppercase;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: var(--bolt);
+  font-weight: 700;
+}
+
+.projects a:hover {
+  text-decoration: none;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .75rem;
+  margin-left: 4rem;
+
+}
+
+.project-item h1 {
+  margin: .5rem 0;
+  padding: .5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.project-item a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--bolt);
+}
+
+.project-item a:visited {
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.snippet {
+  color: var(--alt-color)
+}
+
+.project-item h3 {
+font-size: .8em;
+
+}
+
+.code {
+  font-size: .5rem;
+  color: var(--bolt);
+  padding: .5rem;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  padding: .5rem;
+  width: 50%;
+  margin: auto;
+}
+
+/* ABOUT */
+
+
+.about-header {
+  font-size: 5em;
+  font-family: 'Staatliches', cursive;
+  position: relative;
+  margin-left: 1.5rem;
+  width: 30%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about img {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* SKILLS */
+
+.bio-box {
+  width: 65%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 10%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.tools {
+  margin-top: 3rem;
+  /* width: 30%; */
+}
+
+.skills h2 {
+  margin-top: 1rem;
+}
+
+/* CONTACT */
+
+.contact-header {
+  font-size: 6em;
+  font-family: 'Staatliches', cursive;
+  position: relative;
+  margin-left: 2rem;
+  width: 30%;
+}
+
+.contact a {
+  color: var(--bolt);
+}
+
+.contacts h2 {
+  text-transform: uppercase;
+}
+
+
+
+.bolt {
+  color: var(--bolt);
+}
+
+.contacts {
+  margin-left: 40%;
+  margin-top: 5%;
+  text-align: left;
+}
+
+.socials ul {
+  list-style-type: none;
+
+}
+
+.socials ul li {
+    display: inline;
+    margin: 1rem;
+}
+
+.socials a:hover {
+  color: var(--bolt);
+}
+
+.copy p {
+  color: var(--light-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Helvetica', sans-serif;
+}
+
 
 
 
 /* MEDIA QUERIES*/
-/*  TABLET  */
- @media (min-width: 764px) {
+/*  Mobile  */
+ @media (min-width: 400px) and (max-width: 709px) {
 
-  .me img {
-    width: 250px;
-    height: 250px;
-  }
 
-  .about {
-    height: 110vh;
-  }
 
-  .skills-icons {
-    justify-content: space-between;
-    /* margin: 1rem; */
-  }
+   .hero-name {
+    font-size: 6em;
+     padding: 1rem;
+   }
 
-  .card-container {
-    flex-direction: row;
-    justify-content: center;
-  }
+   nav img {
+     width: 300px;
+     height: 300px;
+   }
+
+   nav ul {
+     justify-content: center;
+   }
+
+   .intro {
+     margin-top: 2rem;
+   }
+
+   .intro p {
+     margin: 2rem;
+     font-size: 1rem;
+   }
+
+   .intro h3 {
+     margin: 2rem;
+     font-size: 1rem;
+   }
+
+   .projects {
+     height: 380vh;
+   }
+
+   .project-img img {
+     width: 350px;
+     height: 210px;
+     margin-left: 3.5rem;
+   }
+
+   .project-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 0 2rem;
+   }
+
+   .about {
+     height: 150vh;
+   }
+
+   .tools {
+     margin-top: -.5rem;
+   }
+
+   .about-header {
+     font-size: 2.5rem;
+     margin-right: .5rem;
+   }
 
 }
+/*
+/* Tablet */
+@media (min-width: 710px) and (max-width: 780px) {
 
-/* DESKTOP */
-@media (min-width: 1024px) {
+   .hero-name {
+    font-size: 8em;
+  }
+
+
+  .project-img img {
+    margin-left: 3.5rem;
+  }
+
+  .project-container {
+    margin: 0 1rem;
+  }
+
+  .projects {
+    height: 170vh;
+  }
 
   .about {
-  height: 100vh;
-  }
-
-
-  .me img {
-    float: left;
-    border-radius: 0%;
-    margin-top: 8rem;
-    width: 200px;
-    height: 300px;
-  }
-
-  .bio {
-    float: right;
-    width: 75%;
-    margin-top: 5rem;
-    padding: 4rem;
-  }
-
-  .skills {
-    clear: both;
-  }
-
-  .contact {
-    height: 100vh;
+    height: 120vh;
   }
 
 
