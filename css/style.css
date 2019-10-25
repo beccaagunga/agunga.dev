@@ -92,6 +92,10 @@ nav ul li {
   font-weight: 700;
 }
 
+nav a {
+  color: var(--light-color);
+}
+
 nav a:hover {
   color: var(--bolt);
   text-decoration: none;
@@ -102,7 +106,7 @@ nav a:hover:nth-child(2) {
 }
 
 nav a:visited {
-  color: var(--bolt);
+  color: var(--light-color);
 }
 
 
@@ -110,7 +114,7 @@ nav a:visited {
 /* PROJECTS */
 
 .projects {
-  height: 175vh;
+  height: 230vh;
 }
 
 .projects h2 {
@@ -121,6 +125,12 @@ nav a:visited {
   font-size: 3rem;
   color: var(--bolt);
   font-weight: 700;
+}
+
+.projects a {
+  color: var(--light-color);
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .projects a:hover {
@@ -195,6 +205,10 @@ font-size: .8em;
 .about img {
   width: 60px;
   height: 60px;
+}
+
+.about {
+  height: 125vh;
 }
 
 
@@ -308,7 +322,7 @@ font-size: .8em;
    }
 
    .projects {
-     height: 380vh;
+     height: 510vh;
    }
 
    .project-img img {
@@ -325,7 +339,7 @@ font-size: .8em;
    }
 
    .about {
-     height: 150vh;
+     height: 175vh;
    }
 
    .tools {
@@ -344,6 +358,7 @@ font-size: .8em;
 
    .hero-name {
     font-size: 8em;
+    color: red;
   }
 
 
@@ -356,7 +371,7 @@ font-size: .8em;
   }
 
   .projects {
-    height: 170vh;
+    height: 250vh;
   }
 
   .about {
