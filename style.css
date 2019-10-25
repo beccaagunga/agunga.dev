@@ -1,0 +1,367 @@
+/*  CUSTOM STYLES  */
+
+:root {
+  --dark-color: #141414;
+  --light-color: #fff;
+  --alt-color: rgb(159, 159, 159);
+  --bolt: #ECBA17;
+}
+html,
+body,
+header,
+.hero,
+.projects,
+.about,
+.contact {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* TEXT STYLING */
+a {
+  color: var(--light-color);
+  font-family: 'Helvetica', sans-serif;
+  text-decoration: none;
+}
+
+a:visited {
+color: var(--light-color);
+}
+
+/* HERO */
+
+.hero-name {
+  margin-left: 1.5rem;
+  font-size: 11em;
+  font-family: 'Staatliches', sans-serif;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro p {
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+
+.intro h3 {
+  margin: 2rem;
+}
+
+
+/* NAVBAR */
+nav {
+  background-color: var(--dark-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  height: 50px;
+  width: calc(1/3*100% - (1 - 1/3)*10px);
+  /* background-color: blue; */
+}
+
+nav .logo {
+  width: 40px;
+  height: 40px;
+  margin: .6rem 0;
+  left: 0;
+  margin: .6rem 1rem;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  margin: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: var(--bolt);
+  text-decoration: none;
+}
+
+nav a:hover:nth-child(2) {
+  color: var(--light-color);
+}
+
+nav a:visited {
+  color: var(--bolt);
+}
+
+
+
+/* PROJECTS */
+
+.projects {
+  height: 175vh;
+}
+
+.projects h2 {
+  /* text-align: center; */
+  text-transform: uppercase;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: var(--bolt);
+  font-weight: 700;
+}
+
+.projects a:hover {
+  text-decoration: none;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .75rem;
+  margin-left: 4rem;
+
+}
+
+.project-item h1 {
+  margin: .5rem 0;
+  padding: .5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.project-item a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--bolt);
+}
+
+.project-item a:visited {
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.snippet {
+  color: var(--alt-color)
+}
+
+.project-item h3 {
+font-size: .8em;
+
+}
+
+.code {
+  font-size: .5rem;
+  color: var(--bolt);
+  padding: .5rem;
+}
+
+.project-img img {
+  width: 100%;
+  height: auto;
+  padding: .5rem;
+  width: 50%;
+  margin: auto;
+}
+
+/* ABOUT */
+
+
+.about-header {
+  font-size: 5em;
+  font-family: 'Staatliches', cursive;
+  position: relative;
+  margin-left: 1.5rem;
+  width: 30%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about img {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* SKILLS */
+
+.bio-box {
+  width: 65%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 10%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.tools {
+  margin-top: 3rem;
+  /* width: 30%; */
+}
+
+.skills h2 {
+  margin-top: 1rem;
+}
+
+/* CONTACT */
+
+.contact-header {
+  font-size: 6em;
+  font-family: 'Staatliches', cursive;
+  position: relative;
+  margin-left: 2rem;
+  width: 30%;
+}
+
+.contact a {
+  color: var(--bolt);
+}
+
+.contacts h2 {
+  text-transform: uppercase;
+}
+
+
+
+.bolt {
+  color: var(--bolt);
+}
+
+.contacts {
+  margin-left: 40%;
+  margin-top: 5%;
+  text-align: left;
+}
+
+.socials ul {
+  list-style-type: none;
+
+}
+
+.socials ul li {
+    display: inline;
+    margin: 1rem;
+}
+
+.socials a:hover {
+  color: var(--bolt);
+}
+
+.copy p {
+  color: var(--light-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Helvetica', sans-serif;
+}
+
+
+
+
+/* MEDIA QUERIES*/
+/*  Mobile  */
+ @media (min-width: 400px) and (max-width: 709px) {
+
+
+
+   .hero-name {
+    font-size: 6em;
+     padding: 1rem;
+   }
+
+   nav img {
+     width: 300px;
+     height: 300px;
+   }
+
+   nav ul {
+     justify-content: center;
+   }
+
+   .intro {
+     margin-top: 2rem;
+   }
+
+   .intro p {
+     margin: 2rem;
+     font-size: .7rem;
+   }
+
+   .intro h3 {
+     margin: 2rem;
+     font-size: 1rem;
+   }
+
+   .projects {
+     height: 380vh;
+   }
+
+   .project-img img {
+     width: 350px;
+     height: 210px;
+     margin-left: 3.5rem;
+   }
+
+   .project-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 0 2rem;
+   }
+
+   .about {
+     height: 162vh;
+   }
+
+   .tools {
+     margin-top: -.5rem;
+   }
+
+   .about-header {
+     font-size: 2.5rem;
+     margin-right: .5rem;
+   }
+
+}
+/*
+/* Tablet */
+@media (min-width: 710px) and (max-width: 780px) {
+
+   .hero-name {
+    font-size: 8em;
+  }
+
+
+  .project-img img {
+    margin-left: 3.5rem;
+  }
+
+  .project-container {
+    margin: 0 1rem;
+  }
+
+  .projects {
+    height: 170vh;
+  }
+
+  .about {
+    height: 120vh;
+  }
+
+
+}
