@@ -97,6 +97,16 @@ nav a:hover {
   text-decoration: none;
 }
 
+nav a:hover:nth-child(2) {
+  color: var(--light-color);
+}
+
+nav a:visited {
+  color: var(--bolt);
+}
+
+
+
 /* PROJECTS */
 
 .projects {
