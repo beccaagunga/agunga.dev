@@ -253,6 +253,12 @@ font-size: .8em;
   text-transform: uppercase;
 }
 
+.email p {
+  margin-left: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 
 
 .bolt {
@@ -280,6 +286,12 @@ font-size: .8em;
   color: var(--bolt);
 }
 
+.resume a {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 3rem;
+}
+
 .copy p {
   color: var(--light-color);
   text-align: center;
@@ -294,8 +306,6 @@ font-size: .8em;
 /*  Mobile  */
  @media (min-width: 400px) and (max-width: 709px) {
 
-
-
    .hero-name {
     font-size: 6em;
      padding: 1rem;
@@ -306,8 +316,9 @@ font-size: .8em;
      height: 300px;
    }
 
-   nav ul {
+   nav ul  {
      justify-content: center;
+     margin-left: 6rem;
    }
 
    .intro {
@@ -315,30 +326,35 @@ font-size: .8em;
    }
 
    .intro p {
-     margin: 2rem;
+     margin: 5rem 2rem;
      font-size: 1rem;
    }
 
    .intro h3 {
-     margin: 2rem;
+     margin: 5rem 2rem;
      font-size: 1rem;
    }
 
    .projects {
-     height: 560vh;
+     height: 520vh;
    }
 
    .project-img img {
-     width: 350px;
-     height: 210px;
-     margin-left: 3.5rem;
+     width: 320px;
+     height: 180px;
+     /* margin-left: 1rem; */
    }
 
    .project-container {
      display: flex;
      flex-direction: column;
      justify-content: center;
-     margin: 0 2rem;
+     margin: 0 1rem;
+   }
+
+   .snippet {
+     font-size: .8rem;
+     margin-left: .5rem;
    }
 
    .about {
