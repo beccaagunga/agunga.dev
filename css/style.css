@@ -49,15 +49,16 @@ color: var(--dark-color);
 .intro {
   display: flex;
   flex-direction: row;
+  margin-right: 3rem;
 }
 
 .intro p {
-  margin: 2rem;
-  font-size: 1.2rem;
+  margin: 3rem 2rem 0 2rem;
+  font-size: 1.3rem;
 }
 
 .intro h3 {
-  margin: 2rem;
+    margin: 3rem 2rem 0 2rem;
 }
 
 
@@ -87,7 +88,7 @@ nav .logo {
 nav ul li {
   text-transform: uppercase;
   margin: 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
@@ -114,6 +115,7 @@ nav a:visited {
 
 .projects {
   height: 320vh;
+  margin: 1rem;
 }
 
 .projects h2 {
@@ -139,9 +141,13 @@ nav a:visited {
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: .75rem;
+  grid-gap: 2rem;
   margin-left: 4rem;
 
+}
+
+.project-item {
+  margin: 1rem;
 }
 
 .project-item h1 {
@@ -150,6 +156,11 @@ nav a:visited {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
+
+.project-item h3 {
+font-size: .8em;
+}
+
 
 .project-item a:hover {
   cursor: pointer;
@@ -165,11 +176,6 @@ nav a:visited {
 .snippet {
   color: var(--dark-color);
   margin: -.5rem;
-}
-
-.project-item h3 {
-font-size: .8em;
-
 }
 
 .code {
@@ -308,7 +314,11 @@ font-size: .8em;
 
    .hero-name {
     font-size: 6em;
-     padding: 1rem;
+    padding: 1rem;
+   }
+
+   nav {
+     margin: .5rem;
    }
 
    nav img {
@@ -322,7 +332,7 @@ font-size: .8em;
    }
 
    .intro {
-     margin-top: 2rem;
+     /* margin-top: 2rem; */
    }
 
    .intro p {
@@ -337,6 +347,7 @@ font-size: .8em;
 
    .projects {
      height: 520vh;
+     margin-bottom: 10rem;
    }
 
    .project-img img {
