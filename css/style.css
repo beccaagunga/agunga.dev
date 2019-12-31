@@ -215,6 +215,8 @@ nav a:visited {
 .about img {
   width: 60px;
   height: 60px;
+
+  margin: 0;
 }
 
 .about {
@@ -222,7 +224,7 @@ nav a:visited {
 }
 
 .bio-box {
-  margin: 2rem;
+
 }
 
 .bio-box h2 {
@@ -266,8 +268,6 @@ nav a:visited {
   text-transform: uppercase;
 }
 
-
-
 .bolt {
   color: var(--bolt);
 }
@@ -299,11 +299,42 @@ nav a:visited {
   margin-left: 3rem;
 }
 
-.copy p {
+.copy {
   margin-top: 4rem;
+}
+
+.copy a {
+  font-size: .75rem;
+  font-weight: bold;
+  color: text-align: center;
+  text-transform: uppercase;
+}
+
+.copy a:hover {
+  color: var(--bolt);
+}
+
+.copy p {
   font-size: .75rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Helvetica', sans-serif;
+}
+
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-gap: 1rem;
+
+    margin: 0 2rem;
+  }
+
+
 }
