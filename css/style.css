@@ -8,7 +8,8 @@
 }
 html,
 body,
-header {
+header,
+.projects {
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -49,6 +50,7 @@ color: var(--dark-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 500px;
 }
 
 .hero-name {
@@ -72,7 +74,7 @@ color: var(--dark-color);
   margin: .3rem .5rem;
 }
 
-.about-me {
+/* .about-me {
   margin: 1rem;
   font-size: 1rem;
   font-weight: bold;
@@ -80,8 +82,8 @@ color: var(--dark-color);
   background-color: var(--bolt);
   padding: .75rem 2rem;
   text-transform: uppercase;
-  border: none;
-}
+  height: 100px;
+} */
 
 .about-me:hover {
   text-decoration: none;
@@ -208,7 +210,7 @@ nav a:visited {
   font-size: 5em;
   font-family: 'Staatliches';
   position: relative;
-  margin-left: 2rem;
+  margin: 4rem 2rem;
   text-align: left;
 }
 
@@ -249,7 +251,7 @@ nav a:visited {
   font-size: 6em;
   font-family: 'Staatliches', cursive;
   position: relative;
-  margin-left: 2rem;
+  margin: 4rem 2rem;
   width: 30%;
 }
 
@@ -263,7 +265,7 @@ nav a:visited {
 }
 
 .email p {
-  margin-left: 3rem;
+  margin-left: 2rem;
   font-weight: 700;
   text-transform: uppercase;
 }
