@@ -45,7 +45,7 @@ color: var(--dark-color);
 }
 
 .hero {
-  border: 10px solid var(--bolt);
+  /* border: 10px solid var(--bolt); */
   margin: 2rem;
   display: flex;
   flex-direction: column;
