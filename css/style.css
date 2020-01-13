@@ -35,6 +35,16 @@ a:visited {
 color: var(--dark-color);
 }
 
+/* OVERLAY */
+/* .overlay {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      top: 0%:
+} */
+
 /* HERO */
 
 .logo {
