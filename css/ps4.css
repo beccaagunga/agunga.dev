@@ -2,7 +2,7 @@
   --dark-color: #141414;
   --light-color: #fff;
   --alt-color: rgb(159, 159, 159);
-  --bolt: #ECBA17;
+  --bolt: #ecba17;
 }
 
 html,
@@ -22,25 +22,27 @@ header {
   top: 0;
 } */
 
-
 /* PS4 CASE STUDY*/
 
 .intro {
   height: 100vh;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.greatness {
+.intro .greatness {
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 6px;
-  color: #0171CC;
+  color: #0171cc;
 }
 
-.heading {
-  font-family: 'Open Sans', sans-serif ;
-  letter-spacing: .2px;
+.intro .heading {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.2px;
   margin: 2rem 0;
 }
 
@@ -53,7 +55,7 @@ header {
 }
 
 .ribbon {
-  background-color: #0171CC;
+  background-color: #0171cc;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -62,13 +64,13 @@ header {
 }
 
 .ribbon p {
-    font-family: 'Helvetica', sans-serif;
-    padding: 1rem 0;
+  font-family: "Helvetica", sans-serif;
+  padding: 1rem 0;
 }
 
 .desc {
   background-color: #e0e0e0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 2rem;
 }
 
@@ -85,25 +87,24 @@ header {
   text-decoration: none;
 }
 
-
 .view {
   text-align: center;
   height: 30px;
   margin: 1rem 0;
   text-transform: uppercase;
   color: black;
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
 
 .view:hover {
-  color: #0171CC;
+  color: #0171cc;
   text-decoration: none;
 }
 
 .view:visited {
-  color: #0171CC;
+  color: #0171cc;
   text-decoration: none;
 }
 
@@ -116,16 +117,15 @@ header {
   width: 200px;
 } */
 
-
 .process .text {
   margin: 3rem;
-  font-family: 'Open Sans', sans-serif ;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
 .section-title {
-  color: #0171CC;
-  font-family: 'Helvetica', sans-serif;
+  color: #0171cc;
+  font-family: "Helvetica", sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -134,10 +134,9 @@ header {
   letter-spacing: 1.5px;
 }
 
-.home, .nav {
+.home,
+.nav {
   /* height: 100vh; */
-
-
 }
 
 .home img {
@@ -156,7 +155,8 @@ header {
   width: 250px;
 }
 
-.product-page img, .product-page-2 img {
+.product-page img,
+.product-page-2 img {
   height: auto;
   max-width: 100%;
   display: block;
@@ -180,9 +180,44 @@ header {
   width: 500px;
 }
 
+.up {
+  font-family: var(--jost);
+  height: auto;
+  text-align: center;
+  color: var(--bolt);
+  padding: 1rem;
+  text-transform: uppercase;
+  background: black;
+}
+
+.up a:visited {
+  color: var(--dark-color);
+}
+
+.up a:hover {
+  cursor: pointer;
+}
+
+.copyright {
+  background: black;
+  text-align: center;
+  height: 35px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright p {
+  font-family: var(--jost);
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
 
 @media (min-width: 800px) {
-  .home, .nav, .product-page {
+  .home,
+  .nav,
+  .product-page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 1rem;
@@ -199,8 +234,6 @@ header {
   }
 
   .wireframe img {
-      width: 500px;
+    width: 500px;
   }
-
-
 }
