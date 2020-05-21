@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="img/flash.png" />
-    <!-- JAVASCRIPT -->
-    <script src="js/script.js"></script>
+
     <!-- gsap -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
@@ -23,14 +22,62 @@
   </head>
   <body>
     <!--NAVBAR-->
-    <nav>
-      <ul>
-        <li><a href="/#projects">Projects</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/#contact">Contact</a></li>
-        <!-- <a href="#" class="logo"><img src="img/flash.png" alt="Logo"></a> -->
-      </ul>
-    </nav>
+    <header class="nav-strip sticky" id="stick">
+      <div
+        class="menu-toggler"
+        data-aos="fade-down"
+        data-aos-duration="2500"
+        data-aos-delay="2000"
+      >
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
+      </div>
+      <!-- NAV -->
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+
+          <div class="socials">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/beccaagunga/"
+                class="icon-link"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/beccaagunga"
+                class="icon-link"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1fUe2sIvnW6GHpeXHVS1J9ib0dkWrjilB/view?usp=sharing"
+                class="icon-link"
+                target="_blank"
+              >
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
     <!-- <div class="img-container">
         <img src="img/ds-large.jpeg" alt="DUALSHOCK 4">
     </div> -->
@@ -131,14 +178,18 @@
             <h3 class="section-title">Desktop</h3>
             <a href="http://www.beccaagunga.com/playstation-product-page" target="_blank"><img src='img/ps4/playstation.jpg' alt="blank"></a>
             <p class="text">The desktop version really brings the premium experience to life. I created a minimal design with focus on the product itself. I got a lot of practice working with transitions on this design.
-               When the page loads, each component is brought in with a smooth animation. The featured product is given a "floating" effect using some CSS animations. 
+               When the page loads, each component is brought in with a smooth animation. The featured product is given a "floating" effect using some CSS animations.
             </p>
             <a href="http://www.beccaagunga.com/playstation-product-page" target="_blank"><p class="view">View Desktop Prototype</p></a>
           </div>
 
-          <div class="copy">
-            <a href="#" class="back"><p>Back to Top</p></a>
-            <p> &copy; 2019 Becca T. Agunga </p>
+          <a href="#"
+            ><div class="up">
+              Back to top
+            </div></a
+          >
+          <div class="copyright">
+            <p>&copy;2020 Becca T. Agunga</p>
           </div>
       <!--/FOOTER-->
       <div>
@@ -153,4 +204,9 @@
       </script> -->
 
   </body>
+  <!-- JAVASCRIPT -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="fullpage.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </html>
