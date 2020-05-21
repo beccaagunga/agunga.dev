@@ -1,323 +1,532 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Links -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Becca T. Agunga | UI Developer</title>
+    <!-- CSS -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/flash.png" />
-    <!-- JAVASCRIPT -->
+    <!-- Javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="fullpage.js"></script>
     <script src="js/script.js"></script>
-
-    <title>Becca T. Agunga | Web Developer & Digital Designer </title>
   </head>
+  <!-- Begin Body -->
   <body>
-<!-- OVERLAY -->
-    <!-- <div class="overlay">
-      <h1>hey</h1>
-    </div> -->
-  <!-- CONTAINER -->
-  <div class="container">
-    <!--NAVBAR-->
-    <nav>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <!-- <a href="#" class="logo"><img src="img/flash.png" alt="Logo"></a> -->
-      </ul>
-    </nav>
-
-    <!--/NAVBAR-->
-
-    <!-- HERO -->
-
-  <div class="hero">
-    <a href="#" class="logo"><img src="img/flash.png" alt="Logo"></a>
-    <h1 class="hero-name">Becca Agunga</h1>
-    <div class="intro">
-      <h3>Front-End Web Developer & Digital Designer</h3>
-      <p>from Columbus, Ohio with a passion for creating minimal, responsive web content. </p>
-      <!-- <a href="#about" class="about-me">Learn More</a> -->
+    <div class="overlay">
+      <h1>becca t. agunga &copy 2020</h1>
     </div>
-  </div>
-    <!-- /HERO -->
-
-    <!-- PROJECTS -->
-    <div class="projects" id="projects">
-      <a href="#projects"><h2>Featured Projects</h2></a>
-      <div class="project-container">
-
-        <div class="project-item">
-          <h3>001</h3>
-          <div class="project-img">
-            <a href="https://react-movie-database-rmdb.netlify.com" target="_blank"><img src='img/react-movie.png' alt="blank"></a>
-          </div>
-            <a href="https://react-movie-database-rmdb.netlify.com" target="_blank"><h1 class="project-title">'React Movie Database' React App</h1></a>
-            <p class="snippet">A responsive, IMDB style React App with search functionality. Powered by TMDB. [React.js, React Router, Fetch API] </p>
-            <a href="https://github.com/beccaagunga/react-movie" target="_blank"><p class="code">View Code</p></a>
-        </div>
-
-        <div class="project-item">
-          <h3>002</h3>
-          <div class="project-img">
-            <a href="https://aqua-resorts.netlify.com/" target="_blank"><img src='img/aqua-resorts.png' alt="blank"></a>
-          </div>
-            <a href="https://aqua-resorts.netlify.com/" target="_blank"><h1 class="project-title">'Aqua Resorts' React App</h1></a>
-            <p class="snippet">A luxury resort finding app for 'Aqua Resorts'. [React.js, React Router, Styled Components] </p>
-            <a href="https://github.com/beccaagunga/aqua-resorts" target="_blank"><p class="code">View Code</p></a>
-        </div>
-
-        <div class="project-item">
-          <h3>003</h3>
-          <div class="project-img">
-            <a href="http://www.beccaagunga.com/playstation-product-page" target="_blank"><img src='img/playstation.png' alt="blank"></a>
-          </div>
-            <a href="http://www.beccaagunga.com/playstation-product-page" target="_blank"><h1 class="project-title">Playstation® App Design Concept</h1></a>
-            <p class="snippet">A minimal design concept for the Sony Playstation® App with smooth transition animations. Originally designed in Adobe XD. [HTML5, CSS3, JavaScript ES6, GSAP{Greensock}]</p>
-            <a href="ps4.html" target="_blank"><p class="code">View Case Study</p></a>
-            <a href="https://github.com/beccaagunga/playstation-product-page" target="_blank"><p class="code">View Code</p></a>
-        </div>
-
-          <div class="project-item">
-            <h3>004</h3>
-            <div class="project-img">
-              <a href="https://www.beccaagunga.com/escape-landing-page" target="_blank"><img src='img/escape.png' alt="blank"></a>
-            </div>
-              <a href="https://www.beccaagunga.com/escape-landing-page" target="_blank"><h1 class="project-title">'Escape' Landing Page Concept</h1></a>
-              <p class="snippet">A responsive landing page concept for 'Escape' a tourists guide to Iceland. [HTML5, CSS3, JavaScript ES6, GSAP{GreenSock}] </p>
-              <a href="https://github.com/beccaagunga/escape-landing-page" target="_blank"><p class="code">View Code</p></a>
-          </div>
-
-          <div class="project-item">
-            <h3>005</h3>
-            <div class="project-img">
-              <a href="http://www.beccaagunga.com/foodie-newsletter/" target="_blank"><img src='img/foodie.png' alt="blank"></a>
-            </div>
-              <a href="http://www.beccaagunga.com/foodie-newsletter/" target="_blank"><h1 class="project-title">'Foodie' Newsletter</h1></a>
-              <p class="snippet">A minimal, mobile-first responsive newsletter design for 'Foodie', a cooking community. [HTML5, CSS3, and JavaScript ES6]</p>
-              <a href="http://www.github.com/beccaagunga/foodie-newsletter/" target="_blank"><p class="code">View Code</p></a>
-          </div>
-
-          <div class="project-item">
-            <h3>006</h3>
-            <div class="project-img">
-              <a href="https://beccaagunga.github.io/tech-degree-project-4/" target="_blank"><img src='img/style-guide.png' alt="blank"></a>
-            </div>
-            <a href="https://beccaagunga.github.io/tech-degree-project-4/" target="_blank"><h1 class="project-title">Web Style Guide</h1></a>
-            <p class="snippet">A responsive web style guide. [HTML5, CSS3 / SASS]</p>
-          <a href="https://github.com/beccaagunga/tech-degree-project-4" target="_blank"><p class="code">View Code</p></a>
-          </div>
-
-          <div class="project-item">
-            <h3>007</h3>
-            <div class="project-img">
-              <a href="https://beccaagunga.github.io/tech-degree-project-7/" target="_blank"><img src='img/web-app-dashboard.png' alt="blank"></a>
-            </div>
-            <a href="https://beccaagunga.github.io/tech-degree-project-7/" target="_blank"><h1 class="project-title">WebApp Dashboard</h1></a>
-            <p class="snippet">An interactive dashboard for a web application [SVGs, JavaScript ES6, Chart.js]</p>
-            <a href="https://github.com/beccaagunga/tech-degree-project-7" target="_blank"><p class="code">View Code</p></a>
-          </div>
-
-
-          <div class="project-item">
-            <h3>008</h3>
-            <div class="project-img">
-              <a href="https://beccaagunga.github.io/tech-degree-project-8/" target="_blank"><img src='img/employee.png' alt="blank"></a>
-            </div>
-            <a href="https://beccaagunga.github.io/tech-degree-project-8/" target="_blank"><h1 class="project-title">Employee Directory using API</h1></a>
-            <p class="snippet">A Javascript powered employee directory using third-party API.</p>
-            <a href="https://github.com/beccaagunga/tech-degree-project-8" target="_blank"><p class="code">View Code</p></a>
-          </div>
-
-
-          <div class="project-item">
-            <h3>009</h3>
-            <div class="project-img">
-              <a href="https://beccaagunga.github.io/SneakerHub-Giveaway/" target="_blank"><img src='img/sneakerhub-giveaway.png' alt="blank"></a>
-            </div>
-            <a href="https://beccaagunga.github.io/SneakerHub-Giveaway/" target="_blank"><h1 class="project-title">'SneakerHub' Giveaway Landing Page</h1></a>
-            <p class="snippet">A style guide for Winner's Circle, a member's only sneaker start-up. [Figma]</p>
-            <a href="https://github.com/beccaagunga/sneakerhub-giveaway" target="_blank"><p class="code">View Code</p></a>
-          </div>
-
-
-          <div class="project-item">
-            <h3>010</h3>
-            <div class="project-img">
-              <a href="https://drive.google.com/file/d/1mm4JtO4YBklgBjdqofiQ-WUuk3mi6Cjj/view?usp=sharing" target="_blank"><img src='img/thumb-9.jpg' alt="blank"></a>
-            </div>
-            <a href="https://drive.google.com/file/d/1mm4JtO4YBklgBjdqofiQ-WUuk3mi6Cjj/view?usp=sharing" target="_blank"><h1 class="project-title">UI Style Guide - Winner's Circle</h1></a>
-            <p class="snippet">A style guide for Winner's Circle, a member's only sneaker start-up. [Figma]</p>
-            <a href="https://drive.google.com/file/d/1FBNTi2-mGxv2tqcNE67QDXbK8iOmhGdj/view?usp=sharing" target="_blank"><p class="code">View Mockups</p></a>
-          </div>
-
-
-    <!-- PROJECT TEMPLATE -->
-          <!-- <div class="project-item">
-            <h3>001</h3>
-            <h1>PROJECT TITLE</h1>
-            <p>PROJECT BIO</p>
-            <p class="code">View Code</p>
-          </div> -->
-      </div>
-  <!-- /PROJECTS -->
-
-  <!-- ABOUT -->
-
-  <div class="about" id="about">
-      <h1 class="about-header">So, you want to know<p class="bolt">more?</p></h1>
-
-
-  <div class="bio-box">
-    <h2>Background  <img src="img/flash.png" alt="Logo"></h2>
-        <div class="bio">
-          <p>I'm a 2016 graduate of The Ohio State University in Columbus, Ohio, my hometown. I obtained a Bachelor's of Science degree in Fashion Merchandising with
-          a minor in Visual Communications.
-
-          In late 2018, I decided to teach myself everything I could about front-end development. I have a huge love for code and design.
-          I create minimal and responsive UIs that capture the users attention.
-
-          I'm currently open to new and exciting employment opportunities.</p>
-        </div>
-
-      <div class="tools">
-        <h2>Tools / Languages</h2>
-        <p>
-          HTML5, CSS3, JavaScript ES6,
-          React.js [React Router, Material UI, Styled Components, React Bootstrap] WebPack, SASS,
-          JQuery, Bootstrap, SQL, APIs, GIT, Node.js, npm, JSON, AJAX,
-          Atom, Github, Figma, Sketch, Adobe Suite [Illustrator, Photoshop, InDesign, XD], Stack Overflow
-        </p>
+    <header class="nav-strip sticky" id="stick">
+      <div
+        class="logo"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        data-aos-delay="2000"
+      >
+        <p>ba.</p>
       </div>
 
-      <div class="skills">
-        <h2>Skills</h2>
-        <p>
-          Great Communicator, Team Player, Patient, Eager to Learn, Critical Thinker,
-          Detail Oriented, Creative, Problem Solver, Passionate,
-          Extroverted, Organized, Time Management, Excellent Googler
-        </p>
+      <div
+        class="menu-toggler"
+        data-aos="fade-down"
+        data-aos-duration="2500"
+        data-aos-delay="2000"
+      >
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
       </div>
-    </div>
-
-  <!-- /ABOUT -->
-
-  <!--CONTACT-->
-    <div class="contact" id="contact">
-      <h1 class="contact-header">Excellent! Let's <p class="bolt">connect.<p></h1>
-    <div class="contacts">
-      <div class="email">
-        <h2>Email</h2>
-        <p>beccaagunga@gmail.com</p>
-      </div>
-
-      <div class="social">
-        <h2>Social</h2>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/beccaagunga/" target="_blank">LINKEDIN</a></li>
-          <li><a href="https://github.com/beccaagunga" target="_blank">GITHUB</a></li>
+      <!-- NAV -->
+      <nav class="top-nav">
+        <ul class="desktop-nav">
+          <li>about</li>
+          <li>projects</li>
+          <li>contact</li>
         </ul>
+        <ul class="nav-list">
+          <li>
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="#work" class="nav-link">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+
+          <div class="socials">
+            <li>
+              <a href="#" class="icon-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-link">
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="fullpage">
+        <!-- End NAV -->
+        <!-- Hero -->
+        <div class="hero section">
+          <div class="container">
+            <div class="name" data-aos="fade-down" data-aos-easing="linear">
+              <!-- <p class="hey">hey, i'm</p> -->
+              <h1 class="first" data-aos="fade-down" data-aos-delay="2000">
+                Becca
+              </h1>
+              <h1 class="last" data-aos="fade-down" data-aos-delay="2000">
+                Agunga
+              </h1>
+              <div class="intro" data-aos="fade-down">
+                <h2>
+                  A Front-End Developer and Digital Designer from Columbus,
+                  Ohio.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero -->
+
+        <!--Begin About -->
+        <div class="about section">
+          <div class="container">
+            <!-- <h1 class="section-header">
+              About
+            </h1> -->
+            <div class="content">
+              <div class="img-container">
+                <img
+                  src="img/me.jpg"
+                  alt="Me"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                />
+              </div>
+              <div class="about-me">
+                <div class="bio" data-aos="fade-down" data-aos-duration="3000">
+                  Hey &mdash; my name is Becca and I'm a front-end web developer
+                  & digital designer from Columbus, Ohio. I'm passionate about
+                  building clean, minimal and responsive interfaces for the web.
+                  I enjoy exploring the capabilities of CSS to provide unique
+                  user experiences through design.
+                  <br />
+                  <br />
+                  I'm a 2016 graduate of The Ohio State University where I
+                  studied Fashion & Retail Studies and Visual Communications. In
+                  early 2019, I completed a coding bootcamp where I quickly
+                  found passion for code & design.
+                  <br />
+                  <br />
+                  When I'm not coding, you can find me enjoying time with
+                  friends and family, watching Browns highlights, or doing
+                  something active. I've been working for Vans for 3 years, I'm
+                  a big fan of skateboard culture and its' impact on fashion.
+                  <br />
+                  <br />
+                  Check out my featured projects below. I'm currently open to
+                  employment and freelance opportunities. If you're interested
+                  in working together, message me
+                  <a href="mailto:beccaagunga@gmail.com">here</a>.
+                </div>
+
+                <div class="technique">
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="lang"
+                      data-aos="fade-up"
+                      data-aos-duration="5000"
+                    >
+                      Languages + Frameworks
+                    </button>
+                    <div class="hidden-lang">
+                      <div class="list">
+                        <ul>
+                          <li>HTML5</li>
+                          <li>CSS3</li>
+                          <li>Javascript ES6</li>
+                          <li>jQuery</li>
+                          <li>Vue.js</li>
+                          <li>React.js</li>
+                          <li>Bootstrap 4</li>
+                          <li>SASS</li>
+                          <li>Firebase</li>
+                          <li>npm</li>
+                          <li>Node.js</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="tools"
+                      data-aos="fade-up"
+                      data-aos-duration="6000"
+                    >
+                      Tools
+                    </button>
+                    <div class="hidden-tools">
+                      <div class="list">
+                        <ul>
+                          <li>Adobe XD</li>
+                          <li>Illustrator</li>
+                          <li>InDesign</li>
+                          <li>Photoshop</li>
+                          <li>Atom</li>
+                          <li>Figma</li>
+                          <li>Git</li>
+                          <li>Google Fonts</li>
+                          <li>GSAP</li>
+                          <li>Sketch</li>
+                          <li>VS Code</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="skills"
+                      data-aos="fade-up"
+                      data-aos-duration="7000"
+                    >
+                      Skills
+                    </button>
+                    <div class="hidden-skills">
+                      <div class="list">
+                        <ul>
+                          <li>Natural Leader</li>
+                          <li>Team Player</li>
+                          <li>Communicator</li>
+                          <li>Critical Thinker</li>
+                          <li>Detail Oriented</li>
+                          <li>Problem Solver</li>
+                          <li>Passionate</li>
+                          <li>Creative</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end technique -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End About -->
+        <!-- Begin projects -->
+        <div class="projects section">
+          <div class="container">
+            <h1
+              class="section-header"
+              data-aos="fade-down"
+              data-aos-duration="5000"
+              data-delay="5000"
+            >
+              Featured Projects
+            </h1>
+
+            <div class="project-container">
+              <div class="project-item">
+                <h3 data-aos="fade-left">001</h3>
+                <a
+                  href="https://react-movie-database-rmdb.netlify.app/"
+                  target="_blank"
+                  ><h2>'React Movie Database' React App</h2></a
+                >
+                <a
+                  href="https://react-movie-database-rmdb.netlify.app/"
+                  target="_blank"
+                  ><img src="img/react-movie.png" alt=""
+                /></a>
+                <p>
+                  A responsive, IMDB style React App with complete search
+                  functionality. Powered by TMDB API. Uses React.js, React
+                  Router, and Fetch API.
+                </p>
+                <a
+                  class="code"
+                  href="https://github.com/beccaagunga/react-movie"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+              <div class="project-item">
+                <h3 data-aos="fade-left">002</h3>
+                <a href="https://vue-calender.netlify.app/" target="_blank"
+                  ><h2>Vue.js Calender</h2></a
+                >
+                <a href="https://vue-calender.netlify.app/" target="_blank"
+                  ><img src="img/cal.png" alt="" />
+                </a>
+                <p>
+                  A basic calender built in Vue.js with Vuetify and Firebase for
+                  storing and manipulating events.
+                </p>
+                <a
+                  class="code"
+                  href="https://github.com/beccaagunga/vue_calender"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+              <div class="project-item">
+                <h3 data-aos="fade-left">003</h3>
+                <a href="https://aqua-resorts.netlify.app/" target="_blank"
+                  ><h2>'Aqua Resorts' React App</h2></a
+                >
+                <a href="https://aqua-resorts.netlify.app/" target="_blank"
+                  ><img src="img/aqua-resorts.png" alt="" />
+                </a>
+                <p>
+                  A luxury resort finding app. Built with React.js, React Router
+                  and Styled Components.
+                </p>
+                <a
+                  class="code"
+                  href="https://github.com/beccaagunga/aqua-resorts"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+              <div class="project-item">
+                <h3 data-aos="fade-left">004</h3>
+                <a
+                  href="https://www.beccaagunga.com/playstation-product-page/"
+                  target="_blank"
+                  ><h2>Playsation® App Design Concept</h2></a
+                >
+                <a
+                  href="https://www.beccaagunga.com/playstation-product-page/"
+                  target="_blank"
+                  ><img src="img/playstation.jpg" alt="" />
+                </a>
+                <p>
+                  A minimal design concept for Sony Playstation product pages
+                  with transition animations. Originally designed in Adobe XD.
+                </p>
+                <a
+                  class="code"
+                  href="https://github.com/beccaagunga/playstation-product-page"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+              <div class="project-item">
+                <h3 data-aos="fade-left">005</h3>
+                <a
+                  href="https://www.beccaagunga.com/escape-landing-page/"
+                  target="_blank"
+                  ><h2>'Escape Landing Page Concept'</h2></a
+                >
+                <a
+                  href="https://www.beccaagunga.com/escape-landing-page/"
+                  target="_blank"
+                  ><img src="img/escape.png" alt="" />
+                </a>
+                <p>
+                  A responsive landing page concept for 'Escape', a tourist
+                  guide to Iceland. Using HTML5, CSS3, Javascript ES6, GSAP.
+                </p>
+                <a
+                  class="code"
+                  href="https://github.com/beccaagunga/escape-landing-page"
+                  target="_blank"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Projects -->
+
+        <!-- Begin Footer -->
+        <div class="footer section">
+          <div class="container">
+            <h1 data-aos="fade-down">let's connect.</h1>
+            <div class="contact">
+              <h3>Here's how you can reach me.</h3>
+              <div class="icons">
+                <div class="media">
+                  <a href="mailto:beccaagunga@gmail.com" class="icon-link">
+                    <i class="fas fa-envelope" data-aos="fade-down"></i>
+                  </a>
+                  <div class="media-snippet">
+                    <a href="mailto:beccaagunga@gmail.com"
+                      ><h4 data-aos="fade-down" data-aos-duration="3000">
+                        Email
+                      </h4></a
+                    >
+                    <p>
+                      Shoot me an email — I look forward to hearing from you.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a
+                    href="https://www.linkedin.com/in/beccaagunga/"
+                    class="icon-link"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in" data-aos="fade-down"></i>
+                  </a>
+                  <div class="media-snippet">
+                    <a
+                      href="https://www.linkedin.com/in/beccaagunga/"
+                      target="_blank"
+                      ><h4 data-aos="fade-down" data-aos-duration="3000">
+                        Linkedin
+                      </h4></a
+                    >
+                    <p>
+                      Connect with me and my network. View my background,
+                      skills, and endorsements.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <a
+                    href="https://github.com/beccaagunga"
+                    target="_blank"
+                    class="icon-link"
+                  >
+                    <i class="fab fa-github" data-aos="fade-down"></i>
+                  </a>
+                  <div class="media-snippet">
+                    <a href="https://github.com/beccaagunga" target="_blank"
+                      ><h4 data-aos="fade-down" data-aos-duration="3000">
+                        Github
+                      </h4></a
+                    >
+                    <p>
+                      Most of my personal projects are public repos here. Check
+                      out what I've been working on.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a
+                    href="https://codepen.io/beccaagunga"
+                    target="_blank"
+                    class="icon-link"
+                  >
+                    <i class="fab fa-codepen" data-aos="fade-down"></i>
+                  </a>
+                  <div class="media-snippet">
+                    <a href="https://codepen.io/beccaagunga" target="_blank"
+                      ><h4 data-aos="fade-down" data-aos-duration="3000">
+                        Codepen
+                      </h4></a
+                    >
+                    <p>
+                      For demo exploration of new tech, animation and
+                      interaction.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a
+                    href="https://drive.google.com/file/d/1fUe2sIvnW6GHpeXHVS1J9ib0dkWrjilB/view?usp=sharing"
+                    target="_blank"
+                    class="icon-link"
+                  >
+                    <i class="fas fa-file-pdf" data-aos="fade-down"></i>
+                  </a>
+                  <div class="media-snippet">
+                    <a
+                      href="https://drive.google.com/file/d/1fUe2sIvnW6GHpeXHVS1J9ib0dkWrjilB/view?usp=sharing"
+                      target="_blank"
+                      ><h4 data-aos="fade-down" data-aos-duration="3000">
+                        Resume
+                      </h4></a
+                    >
+                    <p>
+                      Download my resume as a PDF, or a word document here.
+                      Contact me with any inquries.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="media">
+                  <a
+                    href="https://drive.google.com/file/d/1JTCHffoxDPvJiE43Q9fEeKmjuLWVw9dX/view?usp=sharing"
+                    target="_blank"
+                    class="icon-link"
+                  >
+                    <i class="fas fa-certificate" data-aos="fade-down"></i>
+                  </a>
+                  <div class="media-snippet">
+                    <a
+                      href="https://drive.google.com/file/d/1JTCHffoxDPvJiE43Q9fEeKmjuLWVw9dX/view?usp=sharing"
+                      target="_blank"
+                      ><h4 data-aos="fade-down" data-aos-duration="3000">
+                        Certificate
+                      </h4></a
+                    >
+                    <p>
+                      View my Treehouse TechDegree certificate. The program was
+                      completed in April 2019.
+                    </p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="resume">
-        <h2>Resume</h2>
-        <p><a href="https://drive.google.com/file/d/1C7F_75NpNwm5n2zrXXkj5gG2K3nZttAk/view?usp=sharing" target="_blank">View Resume</a></p>
-      </div>
-  </div>
     </div>
-    <!--/CONTACT-->
-
-    <!--FOOTER-->
-
-
-
-    <div class="copy">
-      <a href="#" class="back"><p>Back to Top</p></a>
-      <p> &copy; 2019 Becca T. Agunga </p>
+    <a href="#"
+      ><div class="up">
+        Back to top
+      </div></a
+    >
+    <div class="copyright">
+      <p>&copy2020 Becca T. Agunga</p>
     </div>
-
-    <!--/FOOTER-->
-    <div>
-    <!-- /CONTAINER-->
-
-
   </body>
 </html>
-
-
-
-<!-- UNUSED PROJECTS -->
-
-<!-- <div class="project-item">
-  <h3>008</h3>
-  <div class="project-img">
-    <a href="https://beccaagunga.github.io/square-gallery-email/" target="_blank"><img src='img/thumb-10.jpg' alt="blank"></a>
-  </div>
-  <a href="https://www.beccaagunga.com/square-gallery-email/" target="_blank"><h1>'Square Gallery' HTML Email</h1></a>
-  <p class="snippet">-</p>
-  <a href="https://github.com/beccaagunga/square-gallery" target="_blank"><p class="code">View Code</p></a>
-</div> -->
-
-<!-- <div class="card" style="width: 18rem;">
-  <img src='img/thumb-11.jpg' class="card-img-top" alt="blank">
-<div class="card-body">
-  <p class="card-text">Beach Resort App</p>
-  <p class="card-detail">A Beach Resort app built with React.</p>
-  <a class="btn" href="https://github.com/beccaagunga/Beach-Resort" target="_blank">View Code</a>
-  <a class="btn" href="https://beccaagunga.github.io/Beach-Resort" target="_blank">Demo</a>
-</div>
-</div> -->
-
-<!-- <div class="card" style="width: 18rem;">
-<img src='img/thumb-4.jpg' class="card-img-top" alt="blank">
-<div class="card-body">
-<p class="card-text">Wheel of Success</p>
-<p class="card-detail">A word guessing game. Player must guess random letters to reveal the phrase within 5 tries. Built with vanilla JavaScript.</p>
-<a class="btn" href="https://github.com/beccaagunga/tech-degree-project-6" target="_blank">View Code</a>
-<a class="btn" href="https://beccaagunga.github.io/tech-degree-project-6/" target="_blank">Demo</a>
-</div>
-</div> -->
-
-
-
-<!-- <div class="card" style="width: 18rem;">
-<img src='img/thumb-2.jpg' class="card-img-top" alt="blank">
-<div class="card-body">
-<p class="card-text">Online Registration Form</p>
-<p class="card-detail">A responsive, online registration form using HTML & CSS.</p>
-<a class="btn" href="https://github.com/beccaagunga/tech-degree-project-3" target="_blank">View Code</a>
-<a class="btn" href="https://beccaagunga.github.io/tech-degree-project-3/" target="_blank">Demo</a>
-</div>
-</div> -->
-
-<!--CARD7-->
-
-<!-- <div class="card" style="width: 18rem;">
-<img src='img/thumb-1.jpg' class="card-img-top" alt="blank">
-<div class="card-body">
-<p class="card-text">Personal Portfolio</p>
-<p class="card-detail">A responsive, mobile-first portolio layout using HTML & CSS.</p>
-<a class="btn" href="https://github.com/beccaagunga/tech-degree-project-2" target="_blank">View Code</a>
-<a class="btn" href="https://beccaagunga.github.io/tech-degree-project-2/" target="_blank">Demo</a>
-</div>
-</div> -->
-
-<!-- <div class="card" style="width: 18rem;">
-<img src='img/thumb-7.jpg' class="card-img-top" alt="blank">
-<div class="card-body">
-<p class="card-text">Interactive Photo Gallery</p>
-<p class="card-detail">A responsive, interactive photo gallery with search functionality and jQuery. </p>
-<a class="btn" href="https://github.com/beccaagunga/tech-degree-project-5" target="_blank">View Code</a>
-<a class="btn" href="https://beccaagunga.github.io/tech-degree-project-5/" target="_blank">Demo</a>
-</div>
-</div> -->
-
-
-
-<!-- /UNUSED PROJECTS -->
