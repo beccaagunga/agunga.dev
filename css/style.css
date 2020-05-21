@@ -53,7 +53,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--jost);
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bolder;
   /* letter-spacing: 6px; */
 }
@@ -666,14 +666,18 @@ a.code {
   font-family: var(--jost);
   height: auto;
   text-align: center;
-  color: black;
+  color: var(--bolt);
   padding: 1rem;
   text-transform: uppercase;
-  background: var(--bolt);
+  background: black;
 }
 
 .up a:visited {
   color: var(--dark-color);
+}
+
+.up a:hover {
+  cursor: pointer;
 }
 
 .copyright {
