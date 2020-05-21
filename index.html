@@ -34,13 +34,13 @@
     <!-- Javascript -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="fullpage.js"></script>
     <script src="js/script.js"></script>
   </head>
   <!-- Begin Body -->
   <body>
     <div class="overlay">
-      <h1>becca t. agunga &copy 2020</h1>
+      <h1>becca t. agunga &copy;2020</h1>
     </div>
     <header class="nav-strip sticky" id="stick">
       <div
@@ -64,17 +64,12 @@
       </div>
       <!-- NAV -->
       <nav class="top-nav">
-        <ul class="desktop-nav">
-          <li>about</li>
-          <li>projects</li>
-          <li>contact</li>
-        </ul>
         <ul class="nav-list">
           <li>
             <a href="#about" class="nav-link">About</a>
           </li>
           <li>
-            <a href="#work" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li>
             <a href="#contact" class="nav-link">Contact</a>
@@ -82,17 +77,29 @@
 
           <div class="socials">
             <li>
-              <a href="#" class="icon-link">
+              <a
+                href="https://www.linkedin.com/in/beccaagunga/"
+                class="icon-link"
+                target="_blank"
+              >
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li>
-              <a href="#" class="icon-link">
+              <a
+                href="https://github.com/beccaagunga"
+                class="icon-link"
+                target="_blank"
+              >
                 <i class="fab fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="#" class="icon-link">
+              <a
+                href="https://drive.google.com/file/d/1fUe2sIvnW6GHpeXHVS1J9ib0dkWrjilB/view?usp=sharing"
+                class="icon-link"
+                target="_blank"
+              >
                 <i class="fas fa-file-pdf"></i>
               </a>
             </li>
@@ -107,15 +114,14 @@
         <div class="hero section">
           <div class="container">
             <div class="name" data-aos="fade-down" data-aos-easing="linear">
-              <!-- <p class="hey">hey, i'm</p> -->
               <h1 class="first" data-aos="fade-down" data-aos-delay="2000">
                 Becca
               </h1>
               <h1 class="last" data-aos="fade-down" data-aos-delay="2000">
                 Agunga
               </h1>
-              <div class="intro" data-aos="fade-down">
-                <h2>
+              <div class="intro">
+                <h2 data-aos="fade-down">
                   A Front-End Developer and Digital Designer from Columbus,
                   Ohio.
                 </h2>
@@ -126,7 +132,7 @@
         <!-- End Hero -->
 
         <!--Begin About -->
-        <div class="about section">
+        <div class="about section" id="about">
           <div class="container">
             <!-- <h1 class="section-header">
               About
@@ -135,7 +141,7 @@
               <div class="img-container">
                 <img
                   src="img/me.jpg"
-                  alt="Me"
+                  alt="me"
                   data-aos="fade-up"
                   data-aos-duration="3000"
                 />
@@ -254,7 +260,7 @@
         </div>
         <!-- End About -->
         <!-- Begin projects -->
-        <div class="projects section">
+        <div class="projects section" id="projects">
           <div class="container">
             <h1
               class="section-header"
@@ -276,7 +282,11 @@
                 <a
                   href="https://react-movie-database-rmdb.netlify.app/"
                   target="_blank"
-                  ><img src="img/react-movie.png" alt=""
+                  ><img
+                    src="img/react-movie.png"
+                    alt=""
+                    data-aos="slide-right"
+                    data-aos-duration="3000"
                 /></a>
                 <p>
                   A responsive, IMDB style React App with complete search
@@ -287,6 +297,7 @@
                   class="code"
                   href="https://github.com/beccaagunga/react-movie"
                   target="_blank"
+                  data-aos="fade-up"
                   >View Code</a
                 >
               </div>
@@ -296,13 +307,19 @@
                   ><h2>Vue.js Calender</h2></a
                 >
                 <a href="https://vue-calender.netlify.app/" target="_blank"
-                  ><img src="img/cal.png" alt="" />
+                  ><img
+                    src="img/cal.png"
+                    alt=""
+                    data-aos="slide-left"
+                    data-aos-duration="3000"
+                  />
                 </a>
                 <p>
                   A basic calender built in Vue.js with Vuetify and Firebase for
                   storing and manipulating events.
                 </p>
                 <a
+                  data-aos="fade-up"
                   class="code"
                   href="https://github.com/beccaagunga/vue_calender"
                   target="_blank"
@@ -315,13 +332,19 @@
                   ><h2>'Aqua Resorts' React App</h2></a
                 >
                 <a href="https://aqua-resorts.netlify.app/" target="_blank"
-                  ><img src="img/aqua-resorts.png" alt="" />
+                  ><img
+                    src="img/aqua-resorts.png"
+                    alt=""
+                    data-aos="slide-right"
+                    data-aos-duration="3000"
+                  />
                 </a>
                 <p>
                   A luxury resort finding app. Built with React.js, React Router
                   and Styled Components.
                 </p>
                 <a
+                  data-aos="fade-up"
                   class="code"
                   href="https://github.com/beccaagunga/aqua-resorts"
                   target="_blank"
@@ -338,13 +361,19 @@
                 <a
                   href="https://www.beccaagunga.com/playstation-product-page/"
                   target="_blank"
-                  ><img src="img/playstation.jpg" alt="" />
+                  ><img
+                    src="img/playstation.jpg"
+                    alt=""
+                    data-aos="slide-left"
+                    data-aos-duration="3000"
+                  />
                 </a>
                 <p>
                   A minimal design concept for Sony Playstation product pages
                   with transition animations. Originally designed in Adobe XD.
                 </p>
                 <a
+                  data-aos="fade-up"
                   class="code"
                   href="https://github.com/beccaagunga/playstation-product-page"
                   target="_blank"
@@ -361,13 +390,19 @@
                 <a
                   href="https://www.beccaagunga.com/escape-landing-page/"
                   target="_blank"
-                  ><img src="img/escape.png" alt="" />
+                  ><img
+                    src="img/escape.png"
+                    alt=""
+                    data-aos="slide-right"
+                    data-aos-duration="3000"
+                  />
                 </a>
                 <p>
                   A responsive landing page concept for 'Escape', a tourist
                   guide to Iceland. Using HTML5, CSS3, Javascript ES6, GSAP.
                 </p>
                 <a
+                  data-aos="fade-up"
                   class="code"
                   href="https://github.com/beccaagunga/escape-landing-page"
                   target="_blank"
@@ -380,9 +415,9 @@
         <!-- End Projects -->
 
         <!-- Begin Footer -->
-        <div class="footer section">
+        <div class="footer section" id="contact">
           <div class="container">
-            <h1 data-aos="fade-down">let's connect.</h1>
+            <h1>let's connect.</h1>
             <div class="contact">
               <h3>Here's how you can reach me.</h3>
               <div class="icons">
@@ -485,8 +520,7 @@
                       </h4></a
                     >
                     <p>
-                      Download my resume as a PDF, or a word document here.
-                      Contact me with any inquries.
+                      View my resume - contact me with any inquries.
                     </p>
                     <p></p>
                   </div>
@@ -526,7 +560,7 @@
       </div></a
     >
     <div class="copyright">
-      <p>&copy2020 Becca T. Agunga</p>
+      <p>&copy;2020 Becca T. Agunga</p>
     </div>
   </body>
 </html>
