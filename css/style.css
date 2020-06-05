@@ -37,7 +37,7 @@ a {
   /* position: relative; */
   top: 110px;
 }
-
+/*
 .overlay {
   z-index: 1;
   position: absolute;
@@ -55,8 +55,7 @@ a {
   font-family: var(--jost);
   font-size: 14px;
   font-weight: bolder;
-  /* letter-spacing: 6px; */
-}
+} */
 
 /* Universal Styles */
 .container {
@@ -175,7 +174,7 @@ li {
   margin-left: 2rem;
   position: fixed;
 }
-
+/*
 .logo {
   font-size: 2rem;
   font-family: var(--logo);
@@ -187,7 +186,7 @@ li {
   color: var(--bolt);
   transition: color 0.3s;
   cursor: pointer;
-}
+} */
 
 .nav-link:hover,
 .nav-link:focus {
@@ -521,7 +520,8 @@ li {
   transition: all 0.3s;
 }
 
-a.code {
+a.code,
+a.case {
   font-family: var(--jost);
   font-weight: 600;
   margin: 0.5rem 0;
@@ -530,13 +530,25 @@ a.code {
   text-transform: uppercase;
 }
 
-.code:visited {
+.code:visited,
+.case:visited {
   color: black;
 }
 
-.code:hover {
+.code:hover,
+.case:hover {
   color: var(--bolt);
   transition: all 0.3s;
+}
+
+.case {
+  margin-left: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 /* END Projects */
